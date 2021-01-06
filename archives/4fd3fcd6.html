@@ -803,14 +803,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.9k
+                        2k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        11 分
+                        12 分
                     </div>
                     
                 
@@ -858,7 +858,8 @@
             string <span class="token operator">+=</span> str<span class="token punctuation">(</span>self<span class="token punctuation">.</span>first<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">' '</span>
             self <span class="token operator">=</span> self<span class="token punctuation">.</span>rest
         <span class="token keyword">return</span> string <span class="token operator">+</span> str<span class="token punctuation">(</span>self<span class="token punctuation">.</span>first<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'>'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Q1-Sum-Nums"><a href="#Q1-Sum-Nums" class="headerlink" title="Q1: Sum Nums"></a>Q1: Sum Nums</h3><p>Write a function <code>sum_nums</code> that takes in a linked list and returns the sum of all its elements. You may assume all elements in <code>lnk</code> are integers.</p>
+<h3 id="Q1-Sum-Nums"><a href="#Q1-Sum-Nums" class="headerlink" title="Q1: Sum Nums"></a>Q1: Sum Nums</h3><p>Write a function <code>sum_nums</code> that takes in a linked list and returns the sum of all its elements. </p>
+<p>You may assume all elements in <code>lnk</code> are integers.</p>
 <p><font face="Times New Roman" color="red" style="font-weight:bold">My Solution (Iteration)</font></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">sum_nums</span><span class="token punctuation">(</span>lnk<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">"""
@@ -881,8 +882,8 @@
     <span class="token keyword">if</span> lnk <span class="token operator">==</span> Link<span class="token punctuation">.</span>empty<span class="token punctuation">:</span>
         <span class="token keyword">return</span> <span class="token number">0</span>
     <span class="token keyword">return</span> lnk<span class="token punctuation">.</span>first <span class="token operator">+</span> sum_nums<span class="token punctuation">(</span>lnk<span class="token punctuation">.</span>rest<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Q2-Multiply-Links"><a href="#Q2-Multiply-Links" class="headerlink" title="Q2: Multiply Links"></a>Q2: Multiply Links</h3><p>Write a function that takes in a <code>Python list of linked lists</code> and multiplies them element-wise. It should return a <font face="Times New Roman" color="yellow" style="font-weight:bold">new linked list</font>.</p>
-<p>If not all of the Link objects are of equal length, return a linked list whose length is<br>that of the shortest <font face="Times New Roman" color="yellow" style="font-weight:bold">shortest</font> linked list given. You may assume the Link objects are shallow linked lists, and that lst of lnks contains at least one linked list.</p>
+<h3 id="Q2-Multiply-Links"><a href="#Q2-Multiply-Links" class="headerlink" title="Q2: Multiply Links"></a>Q2: Multiply Links</h3><p>Write a function that takes in a <code>Python list of linked lists</code> and multiplies them element-wise. It should return a <font face="Times New Roman" color="blue" style="font-weight:bold">new linked list</font>.</p>
+<p>If not all of the Link objects are of equal length, return a linked list whose length is that of the shortest <font face="Times New Roman" color="blue" style="font-weight:bold">shortest</font> linked list given. You may assume the Link objects are shallow linked lists, and that lst of lnks contains at least one linked list.</p>
 <p><font face="Times New Roman" color="red" style="font-weight:bold">My Solution (Recursion)</font></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">multiply_lnks</span><span class="token punctuation">(</span>lis_of_lnks<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">"""
@@ -958,10 +959,10 @@
         lst_of_lnks <span class="token operator">=</span> <span class="token punctuation">[</span>l<span class="token punctuation">.</span>rest <span class="token keyword">for</span> l <span class="token keyword">in</span> lst_of_lnks<span class="token punctuation">]</span>
     <span class="token keyword">return</span> head<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p><code>reduce()</code> is a function that apply function of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value. The syntax is <font face="Times New Roman" color="yellow" style="font-weight:bold">reduce(function, iterable[, initializer])</font></p>
+<p><code>reduce()</code> is a function that apply function of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value. The syntax is <font face="Times New Roman" color="blue" style="font-weight:bold">reduce(function, iterable[, initializer])</font></p>
 </blockquote>
-<h3 id="Q3-Filter-Link"><a href="#Q3-Filter-Link" class="headerlink" title="Q3: Filter Link"></a>Q3: Filter Link</h3><p>Implement <code>filter_link</code>, which takes in a linked list <code>link</code> and a function <code>f</code> and<br>returns a generator which yields the values of link for which f returns <code>True</code>.</p>
-<p>Try to implement this both using a while loop and without using any form of<br>iteration !</p>
+<h3 id="Q3-Filter-Link"><a href="#Q3-Filter-Link" class="headerlink" title="Q3: Filter Link"></a>Q3: Filter Link</h3><p>Implement <code>filter_link</code>, which takes in a linked list <code>link</code> and a function <code>f</code> and returns a generator which yields the values of link for which f returns <code>True</code>.</p>
+<p>Try to implement this both using a while loop and without using any form of iteration !</p>
 <p><font face="Times New Roman" color="red" style="font-weight:bold">My Solution (Generator)</font></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">filter_link</span><span class="token punctuation">(</span>link<span class="token punctuation">,</span> f<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">"""
@@ -992,7 +993,7 @@
         <span class="token keyword">return</span> 
     <span class="token keyword">elif</span> f<span class="token punctuation">(</span>link<span class="token punctuation">.</span>first<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">return</span> <span class="token punctuation">[</span>link<span class="token punctuation">.</span>first<span class="token punctuation">]</span> <span class="token operator">+</span> filter_no_iter<span class="token punctuation">(</span>link<span class="token punctuation">.</span>rest<span class="token punctuation">,</span>f<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Trees"><a href="#Trees" class="headerlink" title="Trees"></a>Trees</h2><h3 id="Implementation-1"><a href="#Implementation-1" class="headerlink" title="Implementation"></a>Implementation</h3><p>A tree is defined as having a <code>label</code> and some<br><code>branches</code>. Previously, we implemented the tree abstraction using Python lists. Let’s<br>look at another implementation using objects instead:</p>
+<h2 id="Trees"><a href="#Trees" class="headerlink" title="Trees"></a>Trees</h2><h3 id="Implementation-1"><a href="#Implementation-1" class="headerlink" title="Implementation"></a>Implementation</h3><p>A tree is defined as having a <code>label</code> and some <code>branches</code>. Previously, we implemented the tree abstraction using Python lists. Let’s look at another implementation using objects instead:</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Tree</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> label<span class="token punctuation">,</span> branches<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">for</span> b <span class="token keyword">in</span> branches<span class="token punctuation">:</span>
@@ -1140,8 +1141,8 @@
         <span class="token keyword">return</span> total<span class="token punctuation">,</span> count
     total<span class="token punctuation">,</span> count <span class="token operator">=</span> sum_helper<span class="token punctuation">(</span>t<span class="token punctuation">)</span>
     <span class="token keyword">return</span> total <span class="token operator">/</span> count<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Q8-Combine-Tree"><a href="#Q8-Combine-Tree" class="headerlink" title="Q8: Combine Tree"></a>Q8: Combine Tree</h3><p>Write a function that combines the values of two trees <code>t1</code> and <code>t2</code> together with the <code>combiner</code> function. Assume that t1 and t2 have identical structure. This function should return a <font face="Times New Roman" color="yellow" style="font-weight:bold">new</font> tree</p>
-<p>Hint: consider using the <code>zip()</code> function, which returns an iterator of tuples where<br>the first items of each iterable object passed in form the first tuple, the second items<br>are paired together and form the second tuple, and so on and so forth.</p>
+<h3 id="Q8-Combine-Tree"><a href="#Q8-Combine-Tree" class="headerlink" title="Q8: Combine Tree"></a>Q8: Combine Tree</h3><p>Write a function that combines the values of two trees <code>t1</code> and <code>t2</code> together with the <code>combiner</code> function. Assume that t1 and t2 have identical structure. This function should return a <font face="Times New Roman" color="blue" style="font-weight:bold">new</font> tree</p>
+<p>Hint: consider using the <code>zip()</code> function, which returns an iterator of tuples where the first items of each iterable object passed in form the first tuple, the second items are paired together and form the second tuple, and so on and so forth.</p>
 <p><font face="Times New Roman" color="red" style="font-weight:bold">My Solution</font></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">combine_tree</span><span class="token punctuation">(</span>t1<span class="token punctuation">,</span> t2<span class="token punctuation">,</span> combiner<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">"""
@@ -1176,7 +1177,7 @@
     """</span>
     branch <span class="token operator">=</span> <span class="token punctuation">[</span>combine_tree<span class="token punctuation">(</span>b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> combiner<span class="token punctuation">)</span> <span class="token keyword">for</span> b <span class="token keyword">in</span> zip<span class="token punctuation">(</span>t1<span class="token punctuation">.</span>branches<span class="token punctuation">,</span> t2<span class="token punctuation">.</span>branches<span class="token punctuation">)</span><span class="token punctuation">]</span>
     <span class="token keyword">return</span> Tree<span class="token punctuation">(</span>combiner<span class="token punctuation">(</span>t1<span class="token punctuation">.</span>label<span class="token punctuation">,</span> t2<span class="token punctuation">.</span>label<span class="token punctuation">)</span><span class="token punctuation">,</span> branch<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Q9-Alternate-Tree-Map"><a href="#Q9-Alternate-Tree-Map" class="headerlink" title="Q9: Alternate Tree Map"></a>Q9: Alternate Tree Map</h3><p>Implement the <code>alt_tree_map</code> function that, given a <code>function</code> and a <code>Tree</code>, applies the <code>function</code> to all of the data<br>at every other level of the tree,starting at the root</p>
+<h3 id="Q9-Alternate-Tree-Map"><a href="#Q9-Alternate-Tree-Map" class="headerlink" title="Q9: Alternate Tree Map"></a>Q9: Alternate Tree Map</h3><p>Implement the <code>alt_tree_map</code> function that, given a <code>function</code> and a <code>Tree</code>, applies the <code>function</code> to all of the data at every other level of the tree,starting at the root</p>
 <p><font face="Times New Roman" color="red" style="font-weight:bold">My Solution Using Help Function</font></p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">alt_tree_map</span><span class="token punctuation">(</span>t<span class="token punctuation">,</span> map_fn<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">"""
@@ -1739,7 +1740,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            断断续续做了一段时间才做到`Disc09`， 感觉这门课程还是比想象中的难些，个人理解前面主要就是学习了两种函数结构`higher-order functions`和`recursion`,两种数据结构`tree`和`linked-list`，可变类型`dict`和`list`以及`nonlocal`,`iterator`和`generator`的操作，并学习利用`environment diagram`分析`lambda`表达式和函数的调用，最后学习了`OOP`以及类的继承操作。
+                            This disc practice
                         
                     </div>
                     <div class="publish-info">
