@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://guojingtao-1997.github.io/"/>
-  <updated>2020-08-02T14:57:47.306Z</updated>
+  <updated>2021-01-06T12:53:19.780Z</updated>
   <id>https://guojingtao-1997.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS61A Disc09 - Linked Lists &amp; Trees</title>
+    <link href="https://guojingtao-1997.github.io/archives/4fd3fcd6.html"/>
+    <id>https://guojingtao-1997.github.io/archives/4fd3fcd6.html</id>
+    <published>2021-01-05T16:00:00.000Z</published>
+    <updated>2021-01-06T12:53:19.780Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CS61A-Summer20-Disc09&quot;&gt;&lt;a href=&quot;#CS61A-Summer20-Disc09&quot; class=&quot;headerlink&quot; title=&quot;CS61A Summer20 Disc09&quot;&gt;&lt;/a&gt;CS61A Summer20
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://guojingtao-1997.github.io/categories/Python/"/>
+    
+    
+      <category term="Disc09" scheme="https://guojingtao-1997.github.io/tags/Disc09/"/>
+    
+      <category term="CS61A Summer20" scheme="https://guojingtao-1997.github.io/tags/CS61A-Summer20/"/>
+    
+      <category term="SICP for Python" scheme="https://guojingtao-1997.github.io/tags/SICP-for-Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
